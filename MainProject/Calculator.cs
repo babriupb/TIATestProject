@@ -1,4 +1,6 @@
-﻿namespace MainProject
+﻿using System;
+
+namespace MainProject
 {
     public class Calculator
     {
@@ -20,6 +22,11 @@
         public double Divide(double a, double b)
         {
             return a / b;
+        }
+
+        public double Pow(double a, double b)
+        {
+            return Math.Pow(a, b);
         }
     }
 
