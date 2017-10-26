@@ -21,5 +21,10 @@ namespace MainProject
             return result;
         }
 
+        public bool EmptyOrNull(string a)
+        {
+            return string.IsNullOrEmpty(a);
+        }
+
     }
 }
