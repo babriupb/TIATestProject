@@ -28,6 +28,11 @@ namespace MainProject
         {
             return Math.Pow(a, b);
         }
+
+        public double Log(double a, double b)
+        {
+            return Math.Log(a, b);
+        }
     }
 
 }
