@@ -33,6 +33,11 @@ namespace MainProject
         {
             return Math.Log(a, b);
         }
+
+        public double Log10(double a)
+        {
+            return Math.Log10(a);
+        }
     }
 
 }
