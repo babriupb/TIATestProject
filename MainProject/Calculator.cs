@@ -38,6 +38,11 @@ namespace MainProject
         {
             return Math.Log10(a);
         }
+
+        public double Max(double a, double b)
+        {
+            return Math.Max(a, b);
+        }
     }
 
 }
