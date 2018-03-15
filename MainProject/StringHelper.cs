@@ -11,7 +11,7 @@ namespace MainProject
         public string ConcatStrings(string a, string b)
         {
             string result = string.Concat(a, b);
-
+            var x = "";
             return result;
         }
 
@@ -26,5 +26,14 @@ namespace MainProject
             return string.IsNullOrEmpty(a);
         }
 
+        public int Compare(string a, string b)
+        {
+            return string.Compare(a, b);
+        }
+
+        public string Test(string a, string b)
+        {
+            return a + " _ " + b;
+        }
     }
 }

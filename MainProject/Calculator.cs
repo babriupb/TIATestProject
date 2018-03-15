@@ -6,11 +6,14 @@ namespace MainProject
     {
         public double Add(double a, double b)
         {
+            var c = 2 + 3;
             return a + b;
         }
 
         public double Substract(double a, double b)
         {
+            var random = new Random();
+
             return a - b;
         }
 

@@ -15,7 +15,18 @@ namespace MainProject.Test
             Assert.AreEqual("Test_Test2", result);
         }
 
-        private StringHelper CreateSystemUnderTest()
+		[TestMethod]
+        [TestCategory("A")]
+		public void Add_OnlyPositives() //SameName as in other class
+		{
+			var sut = CreateSystemUnderTest();
+
+			string result = sut.ConcatStrings("1_", "2");
+
+			Assert.AreEqual("1_3", result);
+		}
+
+		private StringHelper CreateSystemUnderTest()
         {
             return new StringHelper();
         }

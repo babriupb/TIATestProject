@@ -10,10 +10,12 @@ namespace MainProject.Test
         [TestInitialize]
         public void FakeInitialize()
         {
-            Thread.Sleep(2500);
+            Thread.Sleep(500);
         }
 
         [TestMethod]
+        [TestCategory("A")]
+        [TestCategory("C")]
         public void Add_OnlyPositives()
         {
             var sut = CreateSystemUnderTest();
@@ -24,6 +26,7 @@ namespace MainProject.Test
         }
 
         [TestMethod]
+        [TestCategory("B")]
         public void Add_PositiveAndNegatvie()
         {
             var sut = CreateSystemUnderTest();
@@ -34,6 +37,7 @@ namespace MainProject.Test
         }
 
         [TestMethod]
+        [TestCategory("C")]
         public void Add_OnlyNegative()
         {
             var sut = CreateSystemUnderTest();
