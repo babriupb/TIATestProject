@@ -7,6 +7,8 @@ namespace MainProject.Test
     [TestClass]
     public class CalculatorTest
     {
+		public TestContext TestContext { get; set; }
+
         [TestInitialize]
         public void FakeInitialize()
         {
@@ -78,7 +80,26 @@ namespace MainProject.Test
             Assert.AreEqual(2, result);
         }
 
-        private Calculator CreateSystemUnderTest()
+		[TestMethod]
+		[DeploymentItem("DataDrivenTestExample.xml")]
+		[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML",
+				   "|DataDirectory|\\DataDrivenTestExample.xml",
+				   "Row",
+					DataAccessMethod.Sequential)]
+		public void DataDrivenTestExampleTest()
+		{
+			int a1 = int.Parse((string)TestContext.DataRow["A1"]);
+			int a2 = int.Parse((string)TestContext.DataRow["A2"]);
+			int result = int.Parse((string)TestContext.DataRow["Result"]);
+
+			var sut = CreateSystemUnderTest();
+
+			var actualResult = sut.Add(a1, a2);
+
+			Assert.AreEqual(result, actualResult);
+		}
+
+		private Calculator CreateSystemUnderTest()
         {
             return new Calculator();
         }
