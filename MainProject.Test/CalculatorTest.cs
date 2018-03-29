@@ -81,11 +81,10 @@ namespace MainProject.Test
         }
 
 		[TestMethod]
-		[DeploymentItem("DataDrivenTestExample.xml")]
+		[DeploymentItem("MainProject.Test\\DataDrivenTestExample.xml")]
+		//[DataSource("|DataDirectory|\\DataDrivenTestExample.xml", "Row")]
 		[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML",
-				   "|DataDirectory|\\DataDrivenTestExample.xml",
-				   "Row",
-					DataAccessMethod.Sequential)]
+				   "|DataDirectory|\\DataDrivenTestExample.xml", "Row", DataAccessMethod.Sequential)]
 		public void DataDrivenTestExampleTest()
 		{
 			int a1 = int.Parse((string)TestContext.DataRow["A1"]);
