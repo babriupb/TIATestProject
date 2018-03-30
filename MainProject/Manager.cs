@@ -13,7 +13,7 @@ namespace MainProject
 		[MyAttribute]
 		public StringHelper MyTest(Calculator calculator)
 		{
-			var x = new AnotherTestClass();
+			var x = new SuperCalculator();
 
 			return null;
 		}

@@ -2,7 +2,7 @@
 
 namespace MainProject
 {
-    public class Calculator : ICalculator, IIdentifiable
+    public class Calculator : SuperCalculator, ICalculator, IIdentifiable
     {
 	    public string Identifier => "Calculator";
 

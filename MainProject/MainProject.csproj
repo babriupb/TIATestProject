@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnotherTestClass.cs" />
+    <Compile Include="SuperCalculator.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="MyClass.cs" />
     <Compile Include="ICalculator.cs" />

@@ -9,7 +9,7 @@ namespace MainProject
     public class Program
     {
 		[MyAttribute]
-		private readonly AnotherTestClass myProperty;
+		private readonly SuperCalculator myProperty;
 
 		public static void Main(string[] args)
         {

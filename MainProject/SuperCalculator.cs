@@ -1,6 +1,6 @@
 ﻿namespace MainProject
 {
-	public class AnotherTestClass
+	public class SuperCalculator
 	{
 		
 	}
