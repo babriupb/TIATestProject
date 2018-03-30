@@ -8,7 +8,10 @@ namespace MainProject
 {
     public class Program
     {
-        public static void Main(string[] args)
+		[MyAttribute]
+		private readonly AnotherTestClass myProperty;
+
+		public static void Main(string[] args)
         {
         }
     }
