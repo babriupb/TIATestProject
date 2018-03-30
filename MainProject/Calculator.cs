@@ -2,8 +2,10 @@
 
 namespace MainProject
 {
-    public class Calculator
+    public class Calculator : ICalculator, IIdentifiable
     {
+	    public string Identifier => "Calculator";
+
         public double Add(double a, double b)
         {
             var c = 2 + 3;
