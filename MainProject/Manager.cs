@@ -17,5 +17,10 @@ namespace MainProject
 
 			return null;
 		}
+
+		public void DoGeneric<T>(T test) where T : IIdentifiable
+		{
+			
+		}
 	}
 }

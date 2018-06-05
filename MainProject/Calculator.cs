@@ -6,6 +6,22 @@ namespace MainProject
     {
 	    public string Identifier => "Calculator";
 
+	    public int Test
+	    {
+		    get
+		    {
+			    var x = 2 + 5;
+			    return x;
+		    }
+		    set
+		    {
+			    var test = value;
+			    test += 2;
+		    }
+	    }
+
+	    public event EventHandler TestHandler;
+
         public double Add(double a, double b)
         {
             var c = 2 + 3;

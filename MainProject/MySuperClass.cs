@@ -2,8 +2,9 @@
 
 namespace MainProject
 {
-	public class MySuperClass<T> where T : Program
+	public class MySuperClass<T, T2> where T : Program
 	{
 		
+
 	}
 }
