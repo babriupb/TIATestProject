@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorTest", "MainProject.Test\CalculatorTest.csproj", "{189F8F18-623E-44E3-927C-477DCF07828A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorTest", "Calculator.Test\CalculatorTest.csproj", "{189F8F18-623E-44E3-927C-477DCF07828A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8E89E124-54D8-49E9-8CBB-CBA569EEE9D4} = {8E89E124-54D8-49E9-8CBB-CBA569EEE9D4}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "MainProject\Calculator.csproj", "{8E89E124-54D8-49E9-8CBB-CBA569EEE9D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{8E89E124-54D8-49E9-8CBB-CBA569EEE9D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
